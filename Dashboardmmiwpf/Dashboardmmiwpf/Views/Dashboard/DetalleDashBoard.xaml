@@ -1,0 +1,95 @@
+﻿<Page x:Class="Dashboardmmiwpf.DetalleDashBoard"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Dashboardmmiwpf"
+      xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920"
+      Title="DetalleDashBoard">
+    <Grid>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="92,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="53" Width="548" FontSize="48" FontFamily="/Dashboardmmiwpf;component/Resources/#Ubuntu" Foreground="#FF19B093" FontWeight="Bold" Text="DISEÑO DASHBOARD"></TextBlock>
+        <Button x:Name="btnBack" Click="btnBack_Click" HorizontalAlignment="Left" Margin="7,49,0,0" VerticalAlignment="Top" Width="72" FontFamily="Segoe UI Light" FontWeight="Normal" Foreground="#FF33436A" Height="76" FontSize="24" BorderBrush="Transparent" Style="{DynamicResource MetroCircleButtonStyle}">
+            <Image Source="/Recursos/icon didactive-03.png"></Image>
+        </Button>
+        <Button HorizontalAlignment="Left" HorizontalContentAlignment="Left" Background="Transparent" VerticalAlignment="Top" Margin="391,136,0,0" Height="62" FontSize="36" Foreground="White" Width="472" FontFamily="/Dashboardmmiwpf;component/Resources/#Ubuntu" FontWeight="Bold" Click="Button_Click_1">
+            <TextBlock x:Name="DashboardName"  Text="Nuevo Dashboard"><Image Source="/Recursos/icon didactive-01.png"></Image></TextBlock>
+        </Button>
+        <Grid HorizontalAlignment="Left" Height="834" Margin="24,209,0,0" VerticalAlignment="Top" Width="334" Background="White">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="39*"/>
+                <ColumnDefinition Width="140*"/>
+            </Grid.ColumnDefinitions>
+            <ScrollViewer HorizontalScrollBarVisibility="Hidden"
+              VerticalScrollBarVisibility="Visible" Margin="4,2,13,64" Grid.ColumnSpan="2" RenderTransformOrigin="0.5,0.5">
+                <ScrollViewer.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleY="-0.47"/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="-0.742"/>
+                    </TransformGroup>
+                </ScrollViewer.RenderTransform>
+                <StackPanel Orientation="Horizontal" Width="348">
+                    <StackPanel.Resources>
+                        <Style TargetType="Canvas">
+                            <Setter Property="Width"
+                        Value="102" />
+                            <Setter Property="Height"
+                        Value="100" />
+                            <Setter Property="Margin"
+                        Value="3" />
+                            <Setter Property="Background"
+                        Value="#FF19B093"/>
+
+                        </Style>
+                        <Style TargetType="{x:Type WrapPanel}">
+                            <Setter Property="Margin"
+                        Value="5,5,25,25" />
+                            <Setter Property="MaxWidth"
+                        Value="800" />
+                        </Style>
+                    </StackPanel.Resources>
+
+                    <StackPanel Orientation="Vertical" Width="330">
+                        <WrapPanel Height="600" Orientation="Vertical" Margin="0,0,1,0">
+                            <Canvas x:Name="CanvasEllipse" Height="102">
+                                <Image Source="C:\Users\manol\Documents\Nueva carpeta\Dashboardmmiwpf\Dashboardmmiwpf\Recursos\barra.png" Height="90" Width="102" Canvas.Top="6"/>
+                            </Canvas>
+                            <Canvas x:Name="CanvasSquare" Height="102">
+                                <Image Source="C:\Users\manol\Documents\Nueva carpeta\Dashboardmmiwpf\Dashboardmmiwpf\Recursos\pie.png" Height="90" Width="102" Canvas.Top="6"/>
+                            </Canvas>
+                            <Canvas x:Name="CanvasCircle" Height="102">
+                                <Image Source="C:\Users\manol\Documents\Nueva carpeta\Dashboardmmiwpf\Dashboardmmiwpf\Recursos\medidor.png" Height="90" Width="102" Canvas.Top="6"/>
+                            </Canvas>
+                            <Canvas x:Name="CanvasRectangle" Height="102">
+                                <Image Source="C:\Users\manol\Documents\Nueva carpeta\Dashboardmmiwpf\Dashboardmmiwpf\Recursos\area.png" Height="90" Width="102" Canvas.Top="6"/>
+                            </Canvas>
+                            <Canvas x:Name="CanvasRectangle2" Height="102">
+                                <Image Source="C:\Users\manol\Documents\Nueva carpeta\Dashboardmmiwpf\Dashboardmmiwpf\Recursos\areasuave.png" Height="82" Width="92" Canvas.Top="11" Canvas.Left="4"/>
+                            </Canvas>
+                            <Canvas x:Name="CanvasRectangle3" Height="102">
+                                <Image Source="C:\Users\manol\Documents\Nueva carpeta\Dashboardmmiwpf\Dashboardmmiwpf\Recursos\medidor2.png" Height="90" Width="102" Canvas.Top="6"/>
+                            </Canvas>
+                            <Canvas x:Name="CanvasRectangle4" Height="102">
+                                <Image Source="C:\Users\manol\Documents\Nueva carpeta\Dashboardmmiwpf\Dashboardmmiwpf\Recursos\lineas.png" Height="90" Width="102" Canvas.Top="6"/>
+                            </Canvas>
+                            <Canvas x:Name="CanvasRectangle5" Height="102">
+                                <Image Source="C:\Users\manol\Documents\Nueva carpeta\Dashboardmmiwpf\Dashboardmmiwpf\Recursos\columnas.png" Height="90" Width="102" Canvas.Top="6"/>
+                            </Canvas>
+                        </WrapPanel>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical">
+                        <WrapPanel Height="400" Orientation="Vertical"/>
+                    </StackPanel>
+
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+        <Grid Margin="383,208,34,115" Background="White" x:Name="Charts" Width="1503" Height="757"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="28,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="53" Width="430" FontFamily="/Dashboardmmiwpf;component/Resources/#Ubuntu" Foreground="White" FontWeight="Bold" Text="Gráficos" FontSize="36"/>
+        <Button x:Name="btnGuardar" Visibility="Visible" Content="Editar" HorizontalAlignment="Left" Margin="1645,983,0,0" VerticalAlignment="Top" Width="240" FontFamily="/Dashboardmmiwpf;component/Resources/#Ubuntu" FontWeight="Normal" Foreground="White" Background="#FF19B093" Height="60" FontSize="36" Click="btnGuardar_Click"/>
+        <Button x:Name="btnGuardar_Copy" Visibility="Visible" Content="Guardar" HorizontalAlignment="Left" Margin="1369,983,0,0" VerticalAlignment="Top" Width="240" FontFamily="/Dashboardmmiwpf;component/Resources/#Ubuntu" FontWeight="Normal" Foreground="White" Background="#FF19B093" Height="60" FontSize="36" Click="btnGuardar_Copy_Click"/>
+    </Grid>
+</Page>

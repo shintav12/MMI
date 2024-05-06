@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4DDE56D8-C748-480E-8906-C9FAD16A6400}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dashboardmmiwpf</RootNamespace>
+    <AssemblyName>Dashboardmmiwpf</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>appicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="De.TorstenMandelkow.MetroChart, Version=0.9.5818.20693, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ModernUICharts.WPF.Beta.0.9.1\lib\De.TorstenMandelkow.MetroChart.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="LiveCharts, Version=0.9.5.0, Culture=neutral, PublicKeyToken=c5935629d38af058, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.5\lib\net45\LiveCharts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.5.0, Culture=neutral, PublicKeyToken=3b585c2a5f1a92c1, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.5\lib\net45\LiveCharts.Wpf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MahApps.Metro, Version=1.3.0.0, Culture=neutral, PublicKeyToken=f4fb5a3c4d1e5b4f, processorArchitecture=MSIL">
+      <HintPath>..\packages\MahApps.Metro.1.3.0\lib\net45\MahApps.Metro.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MahApps.Metro.IconPacks, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MahApps.Metro.IconPacks.1.3.0\lib\net45\MahApps.Metro.IconPacks.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Kinect, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Kinect.Tools, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=AMD64" />
+    <Reference Include="Microsoft.Kinect.Wpf.Controls, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\MahApps.Metro.1.3.0\lib\net45\System.Windows.Interactivity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Views\Dashboard\Dona_Pie_Editar.xaml.cs">
+      <DependentUpon>Dona_Pie_Editar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Entidades\Conexion.cs" />
+    <Compile Include="Entidades\Dashboard.cs" />
+    <Compile Include="Enums\ChartTypes.cs" />
+    <Compile Include="Views\Dashboard\Filas_Editar.xaml.cs">
+      <DependentUpon>Filas_Editar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dashboard\DashboardLista.xaml.cs">
+      <DependentUpon>DashboardLista.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Entidades\DataSource.cs" />
+    <Compile Include="Entidades\DataView.cs" />
+    <Compile Include="Views\Dashboard\Dashboard_Preview.xaml.cs">
+      <DependentUpon>Dashboard_Preview.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dashboard\DetalleDashBoard.xaml.cs">
+      <DependentUpon>DetalleDashBoard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dashboard\DetalleDashboard_Dataview.xaml.cs">
+      <DependentUpon>DetalleDashboard_Dataview.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Entidades\DragDropElement.cs" />
+    <Compile Include="Entidades\DragDropElementController.cs" />
+    <Compile Include="Views\DataSource\EditarEliminar.xaml.cs">
+      <DependentUpon>EditarEliminar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DataSource\EditarEliminarDataView.xaml.cs">
+      <DependentUpon>EditarEliminarDataView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Entidades\Grafico.cs" />
+    <Compile Include="Entidades\KinectControl.cs" />
+    <Compile Include="Views\Dashboard\Lista_Dashboard.xaml.cs">
+      <DependentUpon>Lista_Dashboard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Entidades\MouseControl.cs" />
+    <Compile Include="Views\Dashboard\NewDashboard.xaml.cs">
+      <DependentUpon>NewDashboard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dashboard\NuevoDashboard.xaml.cs">
+      <DependentUpon>NuevoDashboard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dashboard\ProjectLista.xaml.cs">
+      <DependentUpon>ProjectLista.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Entidades\Projects.cs" />
+    <Compile Include="Entidades\Speaker.cs" />
+    <Page Include="Views\Dashboard\Dona_Pie_Editar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Dashboard\Filas_Editar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Dashboard\DashboardLista.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Dashboard\Dashboard_Preview.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DataSource\DataSourceLista.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Dashboard\DetalleDashBoard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Dashboard\DetalleDashboard_Dataview.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DataSource\DetalleDatasource.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DataSource\DetalleDataview.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DataSource\DetalleDataviewListaDatos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DataSource\EditarEliminar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DataSource\EditarEliminarDataView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Dashboard\Lista_Dashboard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DataSource\Lista_Tile.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\DataSource\DataSourceLista.xaml.cs">
+      <DependentUpon>DataSourceLista.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DataSource\DetalleDatasource.xaml.cs">
+      <DependentUpon>DetalleDatasource.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DataSource\DetalleDataview.xaml.cs">
+      <DependentUpon>DetalleDataview.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DataSource\DetalleDataviewListaDatos.xaml.cs">
+      <DependentUpon>DetalleDataviewListaDatos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DataSource\Lista_Tile.xaml.cs">
+      <DependentUpon>Lista_Tile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Views\Dashboard\NewDashboard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Dashboard\NuevoDashboard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Dashboard\ProjectLista.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Icons.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\IconsNonShared.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <Resource Include="Resources\Ubuntu-B.ttf" />
+    <Resource Include="Resources\Ubuntu-BI.ttf" />
+    <Resource Include="Resources\Ubuntu-C.ttf" />
+    <Resource Include="Resources\Ubuntu-L.ttf" />
+    <Resource Include="Resources\Ubuntu-LI.ttf" />
+    <Resource Include="Resources\Ubuntu-M.ttf" />
+    <Resource Include="Resources\Ubuntu-MI.ttf" />
+    <Resource Include="Resources\Ubuntu-R.ttf" />
+    <Resource Include="Resources\Ubuntu-RI.ttf" />
+    <Resource Include="Resources\UbuntuMono-B.ttf" />
+    <Resource Include="Resources\UbuntuMono-BI.ttf" />
+    <Resource Include="Resources\UbuntuMono-R.ttf" />
+    <Resource Include="Resources\UbuntuMono-RI.ttf" />
+    <Resource Include="Resources\big_noodle_titling.ttf" />
+    <Resource Include="Resources\big_noodle_titling_oblique.ttf" />
+    <Resource Include="Resources\Entypo.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Recursos\White-Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Recursos\didactive-02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Recursos\dbBlanco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\WindowsIcons-license.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Entypo-license.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Splash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\big_noodle_titling.txt" />
+    <Resource Include="Resources\Sentinel_Type_Freefont_EULA.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Recursos\atras.png" />
+    <Resource Include="Recursos\dashboard blanco.png" />
+    <Resource Include="Recursos\dashboard.png" />
+    <Resource Include="Recursos\datasource.png" />
+    <Resource Include="Recursos\dataview1 blanco.png" />
+    <Resource Include="Recursos\dataview1.png" />
+    <Resource Include="Recursos\dataview2 blanco.png" />
+    <Resource Include="Recursos\dataview2.png" />
+    <Resource Include="Recursos\default.png" />
+    <Resource Include="Recursos\delete blanco.png" />
+    <Resource Include="Recursos\delete.png" />
+    <Resource Include="Recursos\editar blanco.png" />
+    <Resource Include="Recursos\editar.png" />
+    <Resource Include="Recursos\layout configurar.png" />
+    <Resource Include="Recursos\layout editar.png" />
+    <Resource Include="Recursos\menu.png" />
+    <Resource Include="Recursos\sql.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Splashscreen2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Recursos\dashboards-01.png" />
+    <Resource Include="Recursos\dashboards-02.png" />
+    <Resource Include="Recursos\dashboards-03.png" />
+    <Resource Include="Recursos\dashboards-04.png" />
+    <Resource Include="Recursos\dashboards-05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WpfKb\WpfKb.csproj">
+      <Project>{0784cdc9-0f52-4b8b-9488-6589c11e94e2}</Project>
+      <Name>WpfKb</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Recursos\cursormano.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Recursos\theme.xml" />
+    <Resource Include="Resources\Untitled-9-01 %281%29.ico" />
+    <Resource Include="Recursos\Untitled-9-01.png" />
+    <SplashScreen Include="Recursos\splashscreendark.jpg" />
+    <Resource Include="Recursos\background.jpg" />
+    <Resource Include="Recursos\logo de barra inferior.png" />
+    <Resource Include="Recursos\logo de incio.png" />
+    <Resource Include="Recursos\logo de menú %28barra izquierda%29.png" />
+    <Resource Include="Recursos\icon didactive-01.png" />
+    <Resource Include="Recursos\dbNegro.png" />
+    <Resource Include="Recursos\icon didactive-03.png" />
+    <Resource Include="Recursos\barra.png" />
+    <Resource Include="Recursos\barra2.png" />
+    <Resource Include="Recursos\columnas.png" />
+    <Resource Include="Recursos\dona.png" />
+    <Resource Include="Recursos\lineas.png" />
+    <Resource Include="Recursos\pie.png" />
+    <Resource Include="Recursos\areasuave.png" />
+    <Resource Include="Recursos\area.png" />
+    <Resource Include="Recursos\medidor.png" />
+    <Resource Include="Recursos\medidor2.png" />
+    <Resource Include="Recursos\appicon.ico" />
+    <Resource Include="appicon.ico" />
+    <Resource Include="Recursos\logo.ico" />
+    <Content Include="Recursos\pointer3-512.cur" />
+    <Resource Include="Resources\Barras.jpg" />
+    <Resource Include="Resources\pie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

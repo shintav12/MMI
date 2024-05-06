@@ -1,0 +1,26 @@
+﻿<Page x:Class="Dashboardmmiwpf.EditarEliminarDataView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Dashboardmmiwpf"
+      mc:Ignorable="d" 
+      d:DesignWidth="1920" d:DesignHeight="1080"                      
+      Title="Editar DataView">
+
+    <Grid>
+        <TextBlock x:Name="textBlock1" Text="lorem ipsum" HorizontalAlignment="Left" Foreground="#FFCFCFCF" Margin="77,121,0,0" TextWrapping="Wrap" FontSize="35" VerticalAlignment="Top" Height="40" Width="366"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="108,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="106" Width="659" FontSize="80" FontFamily="SegoeUI" Foreground="#FF33436A"><Run Text="Edici"/><Run Text="ón Dataview"/></TextBlock>
+        <TextBlock x:Name="TbBaseDedatos" HorizontalAlignment="Left" Margin="69,189,0,0" TextWrapping="Wrap" Text="Elegir Base de datos:" VerticalAlignment="Top" FontFamily="SegoeUI" FontSize="48"/>
+        <Button x:Name="btnSiguiente" Content="Siguiente" HorizontalAlignment="Left" Margin="1672,966,0,0" VerticalAlignment="Top" Width="201" FontFamily="/Dashboardmmiwpf;component/Resources/#BigNoodleTitling" FontWeight="Normal" Foreground="White" Background="#FF33436A" Height="50" FontSize="36" Click="btnSiguiente_Click"/>
+        <Button x:Name="btnCancelar" Content="volver" HorizontalAlignment="Left" Margin="1410,966,0,0" VerticalAlignment="Top" Width="201" FontFamily="/Dashboardmmiwpf;component/Resources/#BigNoodleTitling" FontWeight="Normal" Foreground="Black" Height="50"  FontSize="36" Click="btnCancelar_Click" Background="#FFFFFDFD"/>
+        <Button x:Name="btnBack" HorizontalAlignment="Left" Margin="25,31,0,0" VerticalAlignment="Top" Width="73" FontFamily="Segoe UI Light" FontWeight="Normal" Foreground="#FF33436A" Height="76" FontSize="24" BorderBrush="Black" Style="{DynamicResource MetroCircleButtonStyle}" Click="btnBack_Click">
+            <TextBlock Text="&lt;" FontFamily="Big" FontWeight="Bold" FontSize="36"/>
+        </Button>
+        <ComboBox x:Name="cBxDB"  HorizontalAlignment="Left" Margin="536,189,0,0" VerticalAlignment="Top" Width="1335" Height="66" BorderThickness="4" DropDownClosed="cBxDB_DropDownClosed" FontSize="26.667" FontFamily="/Dashboardmmiwpf;component/Resources/#BigNoodleTitling" IsReadOnly="True"/>
+        <TextBlock x:Name="tbSQL" HorizontalAlignment="Left" Margin="66,272,0,0" TextWrapping="Wrap" Text="Sentencia SQL:" VerticalAlignment="Top" FontFamily="SegoeUI" FontSize="48"/>
+        <TextBox x:Name="txtQuery" HorizontalAlignment="Left" AcceptsReturn="True" Height="578" Margin="69,340,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1437" FontSize="36" BorderThickness="4" FontFamily="SegoeUI"/>
+        <DataGrid x:Name="dGColumnas" HorizontalAlignment="Left" Margin="1575,340,0,0" VerticalAlignment="Top" Height="578" Width="298" FontFamily="/Dashboardmmiwpf;component/Resources/#BigNoodleTitling" FontSize="36"/>
+    </Grid>
+</Page>

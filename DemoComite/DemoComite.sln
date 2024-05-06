@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoComite", "DemoComite\DemoComite.csproj", "{137EA8D1-9DBE-4672-9B2B-4FF2B4AE7DC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScreenControl", "ClassLibrary1\ScreenControl.csproj", "{8BAC9BEA-4FF2-4D03-B29C-F2ED0FB2E1DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{082699D7-0ABB-4309-8AC1-7CC0C2D602F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursorsControl", "CursorsControl\CursorsControl.csproj", "{939E6864-261E-4F55-8336-9FEAA7968D28}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{137EA8D1-9DBE-4672-9B2B-4FF2B4AE7DC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{137EA8D1-9DBE-4672-9B2B-4FF2B4AE7DC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{137EA8D1-9DBE-4672-9B2B-4FF2B4AE7DC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{137EA8D1-9DBE-4672-9B2B-4FF2B4AE7DC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BAC9BEA-4FF2-4D03-B29C-F2ED0FB2E1DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BAC9BEA-4FF2-4D03-B29C-F2ED0FB2E1DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BAC9BEA-4FF2-4D03-B29C-F2ED0FB2E1DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BAC9BEA-4FF2-4D03-B29C-F2ED0FB2E1DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{082699D7-0ABB-4309-8AC1-7CC0C2D602F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{082699D7-0ABB-4309-8AC1-7CC0C2D602F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{082699D7-0ABB-4309-8AC1-7CC0C2D602F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{082699D7-0ABB-4309-8AC1-7CC0C2D602F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{939E6864-261E-4F55-8336-9FEAA7968D28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{939E6864-261E-4F55-8336-9FEAA7968D28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{939E6864-261E-4F55-8336-9FEAA7968D28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{939E6864-261E-4F55-8336-9FEAA7968D28}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://shintav12.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ClassLibrary1\\ScreenControl.csproj
+		SccProjectName1 = ClassLibrary1
+		SccLocalPath1 = ClassLibrary1
+		SccProjectUniqueName2 = CursorsControl\\CursorsControl.csproj
+		SccProjectName2 = CursorsControl
+		SccLocalPath2 = CursorsControl
+		SccProjectUniqueName3 = DemoComite\\DemoComite.csproj
+		SccProjectName3 = DemoComite
+		SccLocalPath3 = DemoComite
+		SccProjectUniqueName4 = Entities\\Entities.csproj
+		SccProjectName4 = Entities
+		SccLocalPath4 = Entities
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,33 @@
+﻿<Page x:Class="Dashboardmmiwpf.DetalleDataview"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Dashboardmmiwpf"
+      mc:Ignorable="d" 
+      d:DesignWidth="1920" d:DesignHeight="1080"                      
+      Title="DetalleDataview">
+
+
+    <Grid>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="121,60,0,0" TextWrapping="Wrap" Text="DETALLE VISTA DE DATOS" VerticalAlignment="Top" Height="106" Width="622" FontSize="45" FontFamily="/Dashboardmmiwpf;component/Resources/#Ubuntu" Foreground="#FF19B093" FontWeight="Bold"/>
+        <TextBlock x:Name="TbBaseDedatos" HorizontalAlignment="Left" Margin="69,161,0,0" TextWrapping="Wrap" Text="Elegir Base de datos" VerticalAlignment="Top" FontFamily="/Dashboardmmiwpf;component/Resources/#Ubuntu" FontSize="36" Foreground="#FFF9F7F7"/>
+        <Button x:Name="btnSiguiente" Content="Guardar" HorizontalAlignment="Left" Margin="1672,978,0,0" VerticalAlignment="Top" Width="201" FontFamily="/Dashboardmmiwpf;component/Resources/#Ubuntu" Foreground="White" Height="50" FontSize="36" Click="btnSiguiente_Click" Background="#FF19B093"/>
+        <Button Visibility="Visible" x:Name="btnCancelar" Content="Volver" HorizontalAlignment="Left" Margin="1422,978,0,0" VerticalAlignment="Top" Width="201" FontFamily="/Dashboardmmiwpf;component/Resources/#Ubuntu" Foreground="Black" Height="50"  FontSize="36" Click="btnCancelar_Click" Background="#FFF0F0F0"/>
+        <Button x:Name="btnBack" HorizontalAlignment="Left" Margin="51,49,0,0" VerticalAlignment="Top" Width="73" FontFamily="Segoe UI Light" FontWeight="Normal" Foreground="#FF33436A" Height="76" FontSize="24" BorderBrush="Transparent" Style="{DynamicResource MetroCircleButtonStyle}" Click="btnBack_Click">
+            <Image Source="C:\Users\manol\Documents\Nueva carpeta\Dashboardmmiwpf\Dashboardmmiwpf\Recursos\icon didactive-03.png"></Image>
+        </Button>
+        <ComboBox x:Name="cBxDB" HorizontalAlignment="Left" Margin="68,216,0,0" VerticalAlignment="Top" Width="450" Height="66" BorderThickness="4" DropDownClosed="cBxDB_DropDownClosed" FontSize="26.667" FontFamily="/Dashboardmmiwpf;component/Resources/#Ubuntu" BorderBrush="Gray" Background="White" Foreground="Black"/>
+        <TextBlock x:Name="tbSQL" HorizontalAlignment="Left" Margin="580,313,0,0" TextWrapping="Wrap" Text="Sentencia SQL DML" VerticalAlignment="Top" FontFamily="/Dashboardmmiwpf;component/Resources/#Ubuntu" FontSize="36" Foreground="#FFFFFEFE" RenderTransformOrigin="0.474,0.234"/>
+        <TextBox x:Name="txtQuery" HorizontalAlignment="Left" AcceptsReturn="True" Height="154" Margin="580,375,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1300" FontSize="28" BorderThickness="4" FontFamily="/Dashboardmmiwpf;component/Resources/#Ubuntu" Background="White" Foreground="Black" SelectionBrush="#FF9A9C97"/>
+        <DataGrid x:Name="dGColumnas" HorizontalAlignment="Left" Margin="67,376,0,0" VerticalAlignment="Top" Height="578" Width="450" FontFamily="/Dashboardmmiwpf;component/Resources/#Ubuntu" FontSize="28" BorderBrush="Gray" Foreground="Black" Background="White"/>
+        <TextBlock x:Name="TbBaseDedatos_Copy" HorizontalAlignment="Left" Margin="69,313,0,0" TextWrapping="Wrap" Text="Tablas" VerticalAlignment="Top" FontFamily="/Dashboardmmiwpf;component/Resources/#Ubuntu" FontSize="36" Foreground="#FFF9F7F7"/>
+        <Button x:Name="btnSiguiente_Copy" Content="Prueba" HorizontalAlignment="Left" Margin="1672,550,0,0" VerticalAlignment="Top" Width="201" FontFamily="/Dashboardmmiwpf;component/Resources/#Ubuntu" Foreground="White" Height="50" FontSize="36" Background="#FF19B093" Click="btnSiguiente_Copy_Click"/>
+        <DataGrid x:Name="dGResult" HorizontalAlignment="Left" Margin="581,632,0,0" VerticalAlignment="Top" Width="1300" Height="318" BorderThickness="4" BorderBrush="#FFCCCCCC" FontFamily="/Dashboardmmiwpf;component/Resources/#Ubuntu" FontSize="28" Foreground="Black" Background="White"/>
+        <TextBlock x:Name="tbSQL_Copy" HorizontalAlignment="Left" Margin="580,567,0,0" TextWrapping="Wrap" Text="Lista de Resultados" VerticalAlignment="Top" FontFamily="/Dashboardmmiwpf;component/Resources/#Ubuntu" FontSize="36" Foreground="#FFFFFEFE" RenderTransformOrigin="0.474,0.234"/>
+        <TextBlock x:Name="TbBaseDedatos_Copy1" HorizontalAlignment="Left" Margin="582,160,0,0" TextWrapping="Wrap" Text="Nombre de la vista de datos" VerticalAlignment="Top" FontFamily="/Dashboardmmiwpf;component/Resources/#Ubuntu" FontSize="36" Foreground="#FFFDF8F8" RenderTransformOrigin="0.514,1.775"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="66" Margin="579,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1300" FontSize="28" BorderThickness="4" FontFamily="/Dashboardmmiwpf;component/Resources/#Ubuntu" Foreground="Black" Background="White"/>
+        <Button Visibility="Visible" x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="1422,978,0,0" VerticalAlignment="Top" Width="201" FontFamily="/Dashboardmmiwpf;component/Resources/#Ubuntu" Foreground="Black" Height="50"  FontSize="36" Click="btnEliminar_Click" Background="#FFF0F0F0"/>
+    </Grid>
+</Page>
